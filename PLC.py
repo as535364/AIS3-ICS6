@@ -21,8 +21,7 @@ class PLC:
         if not self.verify(req, hmac):
             return False, ""
         # handle the request
-        resp = "OK"
-        return True, resp
+        return True, req
 
 if __name__ == '__main__':
     plc = PLC()
